@@ -27,14 +27,14 @@ namespace AllOrNothing
     }
 
     // Credit to Rawsome, Stable Infery for the base of this method.es 
-    [BepInPlugin("com.crazyjackel.package.generic", "All or Nothing", "1.0")]
+    [BepInPlugin("io.github.crazyjackel.AON", "All or Nothing", "1.0")]
     [BepInProcess("MonsterTrain.exe")]
     [BepInProcess("MtLinkHandler.exe")]
     public class Plugin : BaseUnityPlugin
     {
         void Awake()
         {
-            var harmony = new Harmony("com.name.package.generic");
+            var harmony = new Harmony("io.github.crazyjackel.AON");
             harmony.PatchAll();
             Console.WriteLine("Starting All or Nothing 1.0");
         }
